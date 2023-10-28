@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="bg-yellow-300 h-screen flex justify-center items-center">
+      <div class="bg-zinc-200 rounded-xl flex flex-col gap-3 p-5 w-[25%] mx-auto">
+        <section class=" rounded-lg ">
+            <div class="bg-zinc-400 rounded-md p-2  flex gap-3 items-center w-full">
+                <input id="searchInput" class="px-2 text-black placeholder:text-zinc-600 outline-none bg-transparent w-full" placeholder="Search City" type="text">
+                <button id="searchBtn" class="p-2 outline-none hover:bg-blue-500 bg-blue-600 rounded-lg text-white font-semibold">Search</button>
+            </div>
+        </section>
+        <div class="hidden" id="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div id="weather" class="p-5 rounded-lg hidden flex-col items-center bg-zinc-400 "> 
+            <h1 id="temp" class="text-black text-2xl font-semibold">22°C</h1>
+            <h2 id="city">New York</h2>
+            <h3 id="country" class="country">USA</h3>
+
+            <div class="details">
+                <div class="col">
+                    <img src="https://github.com/Khyes/12_weather_webapp/blob/main/img/humidity.png?raw=true"
+                        alt="humidity">
+                    <div>
+                        <p id="humidity" class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://github.com/Khyes/12_weather_webapp/blob/main/img/wind.png?raw=true" alt="wind">
+                    <div>
+                        <p id="wind" class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div></div>
+      </div>
+    </main>
+    <script src="./assets/js/index.js"></script>
+
+  </body>
+</html>
